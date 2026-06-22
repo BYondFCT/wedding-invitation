@@ -128,6 +128,16 @@
             cursor: pointer;
             transition: transform 0.3s, filter 0.3s;
             filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+            animation: heartPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes heartPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .heart-button img {
@@ -499,6 +509,21 @@
             line-height: 1.6;
             display: flex;
             align-items: center;
+        }
+
+        .ceremony-address {
+            display: inline-block;
+            margin-top: 8px;
+            color: #3a2a1a;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(58, 42, 26, 0.25);
+            transition: border-color 0.3s, color 0.3s;
+            font-size: 18px;
+        }
+
+        .ceremony-address:hover {
+            color: #8a7560;
+            border-bottom-color: rgba(138, 117, 96, 0.4);
         }
 
         /* Секция 3: Место и время (старая, скрыта) */
@@ -952,12 +977,11 @@
             <div class="location-subtitle fade-in-section">Место проведения</div>
             <div class="location-text fade-in-section">
                 Праздничный банкет будет проходить<br>
-                в ресторане <span style="font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600;">Moment</span>
+                в ресторанном комплексе <span style="font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600;">Раздолье</span>
             </div>
-            <a href="https://yandex.ru/profile/188318269605?lang=ru" target="_blank" class="map-button fade-in-section">НА КАРТЕ</a>
+            <a href="https://yandex.ru/maps/org/razdolye/1735639651/?ll=37.145939%2C55.969280&z=16" target="_blank" class="map-button fade-in-section">НА КАРТЕ</a>
             <div class="photo-container fade-in-section">
-                <img src="./New/mom.jpg" alt="Ресторан Moment" class="location-photo">
-                <img src="./New/ent.png" alt="Entrance" class="entrance-overlay">
+                <img src="./New/raz.png" alt="Ресторанный комплекс Раздолье" class="location-photo">
             </div>
             <div class="time-title fade-in-section">ВРЕМЯ</div>
             <div class="time-subtitle fade-in-section">Программа дня</div>
